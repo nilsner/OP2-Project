@@ -1,9 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace OP2_Project.Data
+namespace Op2_ver._2.Data
 {
     public class Order
     {
@@ -17,42 +15,8 @@ namespace OP2_Project.Data
         public List<OrderLine> items { get; set; }
         public Order()
         {
-            items = new List<OrderLine>();
+            
         }
 
-        private ProdductContext prodductContext;
-        public List<OrderLine> orderLines;
-        public List<Product> products;
-        public List<Customer> customers;
-
-
-        public Order(ProdductContext context)
-        {
-            prodductContext = context;
-            orderLines = new List<OrderLine>();
-            products = new List<Product>();
-            customers = new List<Customer>();
-        }
-
-        
-        public void UpdateProduct(Product Products)
-        {
-            //görs lättast pages-filen. Se Nisses labb4
-        }
-
-        public async Task<List<Product>> AllProducts()
-        {
-            return await Task.Run(() => products);
-        }
-
-        public void AddProducts(Product Products)
-        {
-            products.Add(Products);
-        }
-
-        public void RemoveProducts(Product Products)
-        {
-            products.Remove(Products);
-        }
     }
 }

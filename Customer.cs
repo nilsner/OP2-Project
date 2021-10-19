@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OP2_Project.Data
+namespace Op2_ver._2.Data
 {
     public class Customer
     {
@@ -15,7 +15,7 @@ namespace OP2_Project.Data
 
         public Customer()
         {
-            order = new List<Order>();
+            
         }
     }
 }
